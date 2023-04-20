@@ -1,7 +1,9 @@
 body,
 html,
 #root {
-  background-color: #333;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: hidden;
   padding: 0px;
   margin: 0px;
 }
