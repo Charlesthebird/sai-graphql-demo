@@ -1,0 +1,89 @@
+body,
+html,
+#root {
+  padding: 0px;
+  margin: 0px;
+}
+
+.app-container {
+  height: 100vh;
+  background-color: #333;
+  position: relative;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+
+  .batman-container {
+    text-align: center;
+    img {
+      padding: 20px;
+      height: auto;
+      opacity: 0.5;
+      width: 50%;
+    }
+  }
+
+  .bottom-drawer {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    max-height: 70%;
+    overflow: auto;
+
+    box-shadow: 0 0 50px #555;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    padding: 30px 15px;
+    background-color: #888;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .family-plans,
+    .phones {
+      border-radius: 5px;
+      padding: 10px;
+      padding-bottom: 20px;
+      background-color: #bbb;
+    }
+
+    .family-plans {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      .family-plans-list {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .plan-item {
+          background-color: white;
+          width: 100%;
+          min-height: 20px;
+        }
+      }
+    }
+
+    .phones {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      .phones-list {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+
+        .phone-item {
+          flex-grow: 1;
+          width: 65px;
+          max-width: 100px;
+          height: auto;
+          min-height: 80px;
+          background-color: #555;
+        }
+      }
+    }
+  }
+}
