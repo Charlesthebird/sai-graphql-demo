@@ -19,7 +19,7 @@ function App() {
 
   return (
     <div className="app-container">
-      <div className="batman-container">
+      <div className="bat-container">
         <img src={BatImg} alt="Bat" />
       </div>
       <div className="bottom-drawer">
